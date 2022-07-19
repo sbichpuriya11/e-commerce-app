@@ -1,6 +1,6 @@
 {
-  "homepage": "https://sbichpuriya11.github.io/e-commerce-app/",
-  "name": "e-commerce-app",
+  "homepage": "https://sbichpuriya11.github.io/e-commerce-app",
+  "name": "e-commerce",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,13 +18,13 @@
     "react-hook-form": "^6.11.5",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "^5.0.1",
     "react-stripe-elements": "^6.1.2",
     "semantic-ui-react": "^2.0.1"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"git-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -51,6 +51,6 @@
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "git-pages": "^0.8.1"
+    "gh-pages": "^4.0.0"
   }
 }

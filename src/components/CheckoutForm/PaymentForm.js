@@ -26,15 +26,15 @@ const PaymentForm = ({
       type: "card",
       card: cardElement,
     });
-    console.log(">>>>", paymentMethod);
+    //console.log('>>>>',paymentMethod)
     if (error) {
       console.log(error);
     } else {
       const orderData = {
         line_items: checkoutToken.live.line_items,
         customer: {
-          firstName: shippingData.firstName,
-          lastName: shippingData.lastName,
+          firstname: shippingData.firstName,
+          lastname: shippingData.lastName,
           email: shippingData.email,
         },
         shipping: {

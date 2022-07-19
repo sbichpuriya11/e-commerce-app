@@ -24,6 +24,7 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
   const [shippingData, setShippingData] = useState({});
   const history = useHistory();
   const [isFinished, setIsFinished] = useState(false);
+
   let Confirmation = () =>
     order.customer ? (
       <>
@@ -91,7 +92,7 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
         // console.log(token);
         setCheckoutToken(token);
       } catch (error) {
-        history.pushState("/");
+        //history.pushState("/e-commerce-app");
       }
     };
     generateToken();
