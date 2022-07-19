@@ -41,7 +41,7 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
           variant="outlined"
           type="button"
           component={Link}
-          to="/e-commerce-app"
+          to="/e-commerce-app/"
         >
           Back to Home
         </Button>
@@ -55,7 +55,7 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
           variant="outlined"
           type="button"
           component={Link}
-          to="/e-commerce-app"
+          to="/e-commerce-app/"
         >
           Back to Home
         </Button>
@@ -75,7 +75,7 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
           variant="outlined"
           type="button"
           component={Link}
-          to="/e-commerce-app"
+          to="/e-commerce-app/"
         >
           Back to Home
         </Button>
