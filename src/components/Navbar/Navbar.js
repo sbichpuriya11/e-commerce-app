@@ -17,7 +17,7 @@ const Navbar = ({ totalItems }) => {
   console.log(totalItems);
   const classes = useStyles();
   const location = useLocation();
-
+  console.log(location);
   return (
     <>
       <AppBar position="fixed" className={mergeClasses.appBar} color="inherit">
