@@ -24,7 +24,7 @@ const Navbar = ({ totalItems }) => {
         <Toolbar>
           <Typography
             component={Link}
-            to="/"
+            to="/e-commerce-app"
             variant="h6"
             className={classes.title}
             color="inherit"
@@ -38,11 +38,11 @@ const Navbar = ({ totalItems }) => {
             Commerce.js
           </Typography>
           <div className={classes.grow} />
-          {location.pathname === "/" && (
+          {location.pathname === "/e-commerce-app" && (
             <div className={classes.button}>
               <IconButton
                 component={Link}
-                to="/cart"
+                to="/e-commerce-app/cart"
                 aria-label="Show cart items"
                 color="inherit"
               >

@@ -26,7 +26,7 @@ const PaymentForm = ({
       type: "card",
       card: cardElement,
     });
-
+    console.log(">>>>", paymentMethod);
     if (error) {
       console.log(error);
     } else {
@@ -47,10 +47,17 @@ const PaymentForm = ({
         },
         fulfillment: { shipping_method: shippingData.shippingOption },
         payment: {
-          gateway: "stripe",
-          stripe: {
-            payment_method_id: paymentMethod.id,
+          gateway: "test_gateway",
+          card: {
+            number: "4242 4242 4242 4242",
+            expiry_month: "01",
+            expiry_year: "2023",
+            cvc: "123",
+            postal_zip_code: "94103",
           },
+          // stripe: {
+          //   payment_method_id: paymentMethod.id,
+          // },
         },
       };
       onCaptureCheckout(checkoutToken.id, orderData);

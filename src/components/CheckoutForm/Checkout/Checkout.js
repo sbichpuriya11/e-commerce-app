@@ -36,7 +36,12 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
           Order ref: {order.customer_reference}
         </Typography>
         <br />
-        <Button variant="outlined" type="button" component={Link} to="/">
+        <Button
+          variant="outlined"
+          type="button"
+          component={Link}
+          to="/e-commerce-app"
+        >
           Back to Home
         </Button>
       </>
@@ -45,7 +50,12 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
         <Typography variant="h5">Thank you for your purchase</Typography>
         <Divider className={classes.divider}></Divider>
         <br />
-        <Button variant="outlined" type="button" component={Link} to="/">
+        <Button
+          variant="outlined"
+          type="button"
+          component={Link}
+          to="/e-commerce-app"
+        >
           Back to Home
         </Button>
       </>
@@ -60,7 +70,12 @@ const Checkout = ({ cart, order, error, onCaptureCheckout }) => {
       <>
         <Typography variant="h5">Error : {error}</Typography>
         <br />
-        <Button variant="outlined" type="button" component={Link} to="/">
+        <Button
+          variant="outlined"
+          type="button"
+          component={Link}
+          to="/e-commerce-app"
+        >
           Back to Home
         </Button>
       </>
